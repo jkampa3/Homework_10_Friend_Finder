@@ -1,6 +1,7 @@
 .navbarcontainer {
     font-family: 'Playfair Display', serif;
 }
+
 .jumbotron {
     text-align: center;
     font-family: 'Indie Flower', cursive;
@@ -15,4 +16,5 @@
 
 .buttonClass {
     font-family: 'Playfair Display', serif;
+    background-color: white;
 }
