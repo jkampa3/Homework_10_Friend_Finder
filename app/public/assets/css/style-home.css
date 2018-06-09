@@ -1,0 +1,18 @@
+.navbarcontainer {
+    font-family: 'Playfair Display', serif;
+}
+.jumbotron {
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    background-color: snow;
+}
+
+#comicImg {
+    width: 300px;
+    height: 300px;
+    border: double;
+}
+
+.buttonClass {
+    font-family: 'Playfair Display', serif;
+}
