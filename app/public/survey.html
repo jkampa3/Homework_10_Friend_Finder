@@ -62,24 +62,193 @@
 
     <div class="container bodycontainer">
         <div class="row">
+            <div class="jumbotron col-md-12 mt-1">
+                <br>
+                <h2>
+                    <strong>Friend Finder Survey Questions</strong>
+                </h2>
+                <br>
+                <p>Fill out the survey below to find a friend!</p>
+                <br>
+            </div>
+        </div>
+        <div class="row">
             <div class="card col-md-12 mt-1">
-                <h2 class="card-header">Friend Finder Survey Questions</h2>
-                <div class="card-body left-align">
-                    <br>
-                    <h5><strong>About You</strong></h5>
-                    <input id="name" type="text" class="validate" required>
-                    <label class='active' for="name">Name (required)</label>
-                    <input id="photo" type="text" class="validate" required>
-                    <label class='active' for="name">Link to Photo Image (required)</label>
-                    <br>
-                    <a href="#" class="btn btn-outline-success buttonClass">Submit</a>
+                <div class="card-header">
+                    <h5>
+                        <strong>About You</strong>
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="userNameInput">
+                                <strong>Name (Required)</strong>
+                            </label>
+                            <input type="text" class="form-control" id="userNameInput" placeholder="Enter Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="userPhotoInput">
+                                <strong>Link to Photo Image (Required)</strong>
+                            </label>
+                            <input type="text" class="form-control" id="userPhotoInput" placeholder="URL">
+                        </div>
+                    </form>
                 </div>
             </div>
-
         </div>
+        <div class="row">
+            <div class="card col-md-12 mt-1">
+                <div class="card-header">
+                    <h5>
+                        <strong>Survey Questions</strong>
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">
+                            <strong>Question 1</strong>
+                        </label>
+                        <h6>Your mind is always buzzing with unexplored ideas and plans.</h6>
+                        <select class="form-control" id="q1">
+                            <option value="select">Select an Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                        <hr>
+                        <label for="exampleFormControlSelect1">
+                            <strong>Question 2</strong>
+                        </label>
+                        <h6>Generally speaking, you rely more on your experience than your imagination.</h6>
+                        <select class="form-control" id="q2">
+                            <option value="select">Select an Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                        <hr>
+                        <label for="exampleFormControlSelect1">
+                            <strong>Question 3</strong>
+                        </label>
+                        <h6>You find it easy to stay relaxed and focused even when there is some pressure.</h6>
+                        <select class="form-control" id="q3">
+                            <option value="select">Select an Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                        <hr>
+                        <label for="exampleFormControlSelect1">
+                            <strong>Question 4</strong>
+                        </label>
+                        <h6>You rarely do something just out of sheer curiosity.</h6>
+                        <select class="form-control" id="q4">
+                            <option value="select">Select an Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                        <hr>
+                        <label for="exampleFormControlSelect1">
+                            <strong>Question 5</strong>
+                        </label>
+                        <h6>People can rarely upset you.</h6>
+                        <select class="form-control" id="q5">
+                            <option value="select">Select an Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                        <hr>
+                        <label for="exampleFormControlSelect1">
+                            <strong>Question 6</strong>
+                        </label>
+                        <h6>It is often difficult for you to relate to other people’s feelings.</h6>
+                        <select class="form-control" id="q6">
+                            <option value="select">Select an Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                        <hr>
+                        <label for="exampleFormControlSelect1">
+                            <strong>Question 7</strong>
+                        </label>
+                        <h6>In a discussion, truth should be more important than people’s sensitivities.</h6>
+                        <select class="form-control" id="q7">
+                            <option value="select">Select an Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                        <hr>
+                        <label for="exampleFormControlSelect1">
+                            <strong>Question 8</strong>
+                        </label>
+                        <h6>You rarely get carried away by fantasies and ideas.</h6>
+                        <select class="form-control" id="q8">
+                            <option value="select">Select an Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                        <hr>
+                        <label for="exampleFormControlSelect1">
+                            <strong>Question 9</strong>
+                        </label>
+                        <h6>You think that everyone’s views should be respected regardless of whether they are supported by facts
+                            or not.</h6>
+                        <select class="form-control" id="q9">
+                            <option value="select">Select an Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                        <hr>
+                        <label for="exampleFormControlSelect1">
+                            <strong>Question 10</strong>
+                        </label>
+                        <h6>You feel more energetic after spending time with a group of people.</h6>
+                        <select class="form-control" id="q10">
+                            <option value="select">Select an Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                        </form>
+                        <br>
+                        <div>
+                            <button type="button" class="btn btn-outline-success buttonClass">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 
-</body>
+<script src="assets/javascript/script.js"></script>
 
 </html>
