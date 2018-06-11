@@ -1,7 +1,7 @@
 //api routing
 
 //required file
-var friendList = require('../data/friend.js');
+var friendList = require('../data/friends.js');
 
 //get route
 module.exports = function (app) {
