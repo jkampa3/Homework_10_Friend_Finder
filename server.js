@@ -9,9 +9,12 @@ var app = express();
 //hosting port
 var PORT = process.env.PORT || 3000;
 
-// express for parsing
+//express for parsing
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+
+//express for html files
+app.use(express.static('./app/public'));
 
 //routes
 require("./app/routing/apiRoutes")(app);
