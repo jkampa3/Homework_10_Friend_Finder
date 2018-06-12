@@ -11,7 +11,7 @@ $(document).ready(function () {
                     isValid = false;
                 }
             });
-            $('.browser-default').each(function () {
+            $('.browserDefault').each(function () {
                 if ($(this).val() === "") {
                     isValid = false;
                 }
@@ -22,8 +22,8 @@ $(document).ready(function () {
         //if everything is filled, we have a valid input to push to array
         if (validateForm() == true) {
             var newFriend = {
-                name: $('#name').val().trim(),
-                profilePic: $('#photo').val().trim(),
+                name: $('#userNameInput').val().trim(),
+                profilePic: $('#userPhotoInput').val().trim(),
                 scores: [
                     $('#q1').val(),
                     $('#q2').val(),
@@ -51,8 +51,8 @@ $(document).ready(function () {
             $('.modal').modal();
 
             //form reset
-            $('#name').val("");
-            $('#photo').val("");
+            $('#userNameInput').val("");
+            $('#userPhotoInput').val("");
             $('#q1').val("");
             $('#q2').val("");
             $('#q3').val("");
