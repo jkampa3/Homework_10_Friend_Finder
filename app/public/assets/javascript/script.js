@@ -41,10 +41,10 @@ $(document).ready(function () {
             //posts the data to friends API.
             var currentURL = window.location.origin;
 
-            $.post(currentURL + "/api/friends", userData, function (data) {
+            $.post(currentURL + "/api/friends", newFriend, function (data) {
                 $("#matchName").text(data.name);
                 $("#matchPic").attr("src", data.profilePic);
-                $(".modal").modal('toggle');
+                $("#centeredModal").modal('toggle');
             });
 
             //form reset
