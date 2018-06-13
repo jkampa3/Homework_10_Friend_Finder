@@ -2,7 +2,7 @@
 
 $(document).ready(function () {
 
-//on click form validation to ensure required info needed
+    //on click form validation to ensure required info needed
     $("#submitButton").on("click", function () {
         function validateForm() {
             var isValid = true;
@@ -41,14 +41,11 @@ $(document).ready(function () {
             //posts the data to friends API.
             var currentURL = window.location.origin;
 
-            $.post(currentURL + "/api/friends", newFriend, function (data) {
+            $.post(currentURL + "/api/friends", userData, function (data) {
                 $("#matchName").text(data.name);
                 $("#matchPic").attr("src", data.profilePic);
-
+                $(".modal").modal('toggle');
             });
-
-            // run to push to modal
-            $('.modal').modal();
 
             //form reset
             $('#userNameInput').val("");
